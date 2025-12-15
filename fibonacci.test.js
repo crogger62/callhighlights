@@ -7,6 +7,10 @@ describe('calculateFibonacci', () => {
         expect(calculateFibonacci(-10)).toEqual([]);
     });
 
+    test('returns empty array for additional negative numbers', () => {
+        expect(calculateFibonacci(-5)).toEqual([]);
+    });
+
     test('returns [0] for n === 1', () => {
         expect(calculateFibonacci(1)).toEqual([0]);
     });
